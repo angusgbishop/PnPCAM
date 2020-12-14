@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name OpenPnPVis)(type Legacy)(uri C:/Users/Angus/Documents/OpenPnPVis/OpenPnPVis/OpenPnPVis/lib/OpenPnPVis.lib)(options "")(descr ""))
+  (lib (name AR0144-pinout)(type Legacy)(uri C:/Users/Angus/Documents/OpenPnPVis/OpenPnPVis/OpenPnPVis/lib/AR0144-pinout.lib)(options "")(descr ""))
+  (lib (name FT602Q_Pinout)(type Legacy)(uri C:/Users/Angus/Documents/OpenPnPVis/OpenPnPVis/OpenPnPVis/lib/FT602Q_Pinout.lib)(options "")(descr ""))
+)

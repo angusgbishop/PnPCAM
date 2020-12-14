@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FT602Q
+F https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT602Q%20IC%20Datasheet.pdf
+$ENDCMP
+#
+#End Doc Library
