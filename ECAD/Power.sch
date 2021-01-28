@@ -647,16 +647,16 @@ F 4 "N/A" H 9950 5850 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_ATtiny:ATtiny10-TS U?
+L MCU_Microchip_ATtiny:ATtiny10-MA U?
 U 1 1 602BB0D5
 P 1900 3400
 AR Path="/602BB0D5" Ref="U?"  Part="1" 
 AR Path="/5FE173C9/602BB0D5" Ref="U4"  Part="1" 
 F 0 "U4" H 1370 3446 50  0000 R CNN
-F 1 "ATtiny10-TS" H 1370 3355 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 1900 3400 50  0001 C CIN
+F 1 "ATTINY10-MAHR" H 1370 3355 50  0000 R CNN
+F 2 "Package_DFN_QFN:DFN-8-1EP_2x2mm_P0.5mm_EP0.9x1.5mm" H 1900 3400 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8127-AVR-8-bit-Microcontroller-ATtiny4-ATtiny5-ATtiny9-ATtiny10_Datasheet.pdf" H 1900 3400 50  0001 C CNN
-F 4 "ATtiny10-TS" H 1900 3400 50  0001 C CNN "MPN"
+F 4 "ATTINY10-MAHR" H 1900 3400 50  0001 C CNN "MPN"
 	1    1900 3400
 	1    0    0    -1  
 $EndComp
@@ -672,7 +672,7 @@ Wire Wire Line
 	2650 3300 2500 3300
 Text Label 2600 3400 0    50   ~ 0
 AT_TINY_RST
-Text Label 2650 3300 0    50   ~ 0
+Text Label 2650 3100 0    50   ~ 0
 2V5_EN
 $Comp
 L power:GND #PWR?
@@ -854,19 +854,6 @@ Wire Wire Line
 	2150 6350 2150 6300
 Wire Wire Line
 	2150 6300 2250 6300
-$Comp
-L OPL_Discrete_Semiconductor:SMD-MOSFET-P-CH-8V-4.1A-CJ2305_SOT-23_ Q1
-U 1 1 5FE50876
-P 5650 3100
-F 0 "Q1" H 5764 3142 45  0000 L CNN
-F 1 "SMD-MOSFET-P-CH-8V-4.1A-CJ2305_SOT-23_" H 5764 3058 45  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5650 3100 50  0001 C CNN
-F 3 "" H 5650 3100 50  0001 C CNN
-F 4 "CJ2305" H 5680 3250 20  0001 C CNN "MPN"
-F 5 "305030014" H 5680 3250 20  0001 C CNN "SKU"
-	1    5650 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5550 3500 5650 3500
 Text GLabel 5550 3500 0    50   Input ~ 0
@@ -875,10 +862,6 @@ Text Label 5050 2500 2    50   ~ 0
 VIN
 Wire Wire Line
 	5650 3500 5650 3300
-Text GLabel 5050 3100 0    50   Input ~ 0
-FLASH_SIG
-Wire Wire Line
-	5050 3100 5450 3100
 $Comp
 L Device:C_Small C?
 U 1 1 5FE730FB
@@ -989,7 +972,7 @@ Wire Wire Line
 	10050 1350 10000 1350
 Text GLabel 10200 1500 2    50   Input ~ 0
 VAA
-Text Label 2650 3100 0    50   ~ 0
+Text Label 2650 3300 0    50   ~ 0
 2V8_EN
 $Comp
 L Device:C_Small C?
@@ -1112,4 +1095,136 @@ Wire Wire Line
 	2450 5750 2550 5750
 NoConn ~ 1950 6650
 NoConn ~ 1950 6750
+$Comp
+L OPL_Discrete_Semiconductor:SMD-MOSFET-N-CH-20V-2.1A-CJ2302_SOT-23_ Q1
+U 1 1 5FF7EB6F
+P 5650 3100
+F 0 "Q1" H 5765 3058 45  0000 L CNN
+F 1 "SMD-MOSFET-N-CH-20V-2.1A-CJ2302_SOT-23_" H 5765 3142 45  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5650 3100 50  0001 C CNN
+F 3 "" H 5650 3100 50  0001 C CNN
+F 4 "CJ2302" H 5680 3250 20  0001 C CNN "MPN"
+F 5 "305030015" H 5680 3250 20  0001 C CNN "SKU"
+	1    5650 3100
+	-1   0    0    1   
+$EndComp
+Text GLabel 6250 3100 2    50   Input ~ 0
+FLASH_SIG
+$Comp
+L Device:R_Small R?
+U 1 1 5FFAC8FD
+P 6050 3100
+AR Path="/5FFAC8FD" Ref="R?"  Part="1" 
+AR Path="/5FE173C9/5FFAC8FD" Ref="R15"  Part="1" 
+F 0 "R15" H 6109 3146 50  0000 L CNN
+F 1 "1.6K" H 6109 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6050 3100 50  0001 C CNN
+F 3 "~" H 6050 3100 50  0001 C CNN
+F 4 "RC0402FR-070RL" H 6050 3100 50  0001 C CNN "MPN"
+	1    6050 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 3100 5850 3100
+Wire Wire Line
+	6150 3100 6250 3100
+Text Label 6450 4750 2    50   ~ 0
+1V2_EN
+Text Label 6450 4600 2    50   ~ 0
+AT_TINY_RST
+Text Label 6450 4900 2    50   ~ 0
+2V5_EN
+$Comp
+L power:+5V #PWR?
+U 1 1 6011348E
+P 6450 4450
+AR Path="/6011348E" Ref="#PWR?"  Part="1" 
+AR Path="/5FE173C9/6011348E" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 6450 4300 50  0001 C CNN
+F 1 "+5V" V 6465 4578 50  0000 L CNN
+F 2 "" H 6450 4450 50  0001 C CNN
+F 3 "" H 6450 4450 50  0001 C CNN
+	1    6450 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60116512
+P 6450 5050
+AR Path="/60116512" Ref="#PWR?"  Part="1" 
+AR Path="/5FE173C9/60116512" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 6450 4800 50  0001 C CNN
+F 1 "GND" H 6455 4877 50  0000 C CNN
+F 2 "" H 6450 5050 50  0001 C CNN
+F 3 "" H 6450 5050 50  0001 C CNN
+	1    6450 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5050 6700 5050
+Wire Wire Line
+	6450 4900 6700 4900
+Wire Wire Line
+	6450 4750 6700 4750
+Wire Wire Line
+	6450 4600 6700 4600
+Wire Wire Line
+	6450 4450 6700 4450
+Text Notes 6550 4300 0    50   ~ 0
+TPI Pads
+$Comp
+L Connector:TestPoint TP1
+U 1 1 6013B1E6
+P 6700 4450
+F 0 "TP1" V 6654 4638 50  0000 L CNN
+F 1 "TestPoint" V 6745 4638 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6900 4450 50  0001 C CNN
+F 3 "~" H 6900 4450 50  0001 C CNN
+	1    6700 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 6013C929
+P 6700 4600
+F 0 "TP2" V 6654 4788 50  0000 L CNN
+F 1 "TestPoint" V 6745 4788 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6900 4600 50  0001 C CNN
+F 3 "~" H 6900 4600 50  0001 C CNN
+	1    6700 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 6013FC61
+P 6700 4750
+F 0 "TP3" V 6654 4938 50  0000 L CNN
+F 1 "TestPoint" V 6745 4938 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6900 4750 50  0001 C CNN
+F 3 "~" H 6900 4750 50  0001 C CNN
+	1    6700 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 60143077
+P 6700 4900
+F 0 "TP4" V 6654 5088 50  0000 L CNN
+F 1 "TestPoint" V 6745 5088 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6900 4900 50  0001 C CNN
+F 3 "~" H 6900 4900 50  0001 C CNN
+	1    6700 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 60146332
+P 6700 5050
+F 0 "TP5" V 6654 5238 50  0000 L CNN
+F 1 "TestPoint" V 6745 5238 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6900 5050 50  0001 C CNN
+F 3 "~" H 6900 5050 50  0001 C CNN
+	1    6700 5050
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
