@@ -9,7 +9,7 @@ The current versions of the board are based off the OnSemi AR0144 image sensor, 
 * Up-to 1200x800 pixel resolution at 30fps
 * Global shutter
 * Standard Webcam USB out
-* Onboard LED with exposure-triggered flash
+* <s>Onboard LED with exposure-triggered flash</s> (Requirement Dropped)
 * LED Expansion Header for third-party use of the flash signal.
 * Triggered shutter mode.
 * Onboard lens distortion correction.
