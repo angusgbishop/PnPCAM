@@ -1,0 +1,498 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 60174E18
+P 1200 2600
+F 0 "J1" H 1308 2781 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1308 2690 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 1200 2600 50  0001 C CNN
+F 3 "~" H 1200 2600 50  0001 C CNN
+	1    1200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 6017790E
+P 3750 1350
+F 0 "D2" V 3789 1232 50  0000 R CNN
+F 1 "LED" V 3698 1232 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3750 1350 50  0001 C CNN
+F 3 "~" H 3750 1350 50  0001 C CNN
+	1    3750 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 6017AA4E
+P 3750 1050
+F 0 "D1" H 3743 795 50  0000 C CNN
+F 1 "LED" H 3743 886 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3750 1050 50  0001 C CNN
+F 3 "~" H 3750 1050 50  0001 C CNN
+	1    3750 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 6017AACC
+P 3750 1750
+F 0 "D3" H 3743 1495 50  0000 C CNN
+F 1 "LED" H 3743 1586 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3750 1750 50  0001 C CNN
+F 3 "~" H 3750 1750 50  0001 C CNN
+	1    3750 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 6017C79C
+P 3750 1950
+F 0 "D4" H 3743 1695 50  0000 C CNN
+F 1 "LED" H 3743 1786 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3750 1950 50  0001 C CNN
+F 3 "~" H 3750 1950 50  0001 C CNN
+	1    3750 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 6017CC58
+P 3750 2250
+F 0 "D5" H 3743 1995 50  0000 C CNN
+F 1 "LED" H 3743 2086 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3750 2250 50  0001 C CNN
+F 3 "~" H 3750 2250 50  0001 C CNN
+	1    3750 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 6017CF4A
+P 3750 2550
+F 0 "D6" H 3743 2295 50  0000 C CNN
+F 1 "LED" H 3743 2386 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3750 2550 50  0001 C CNN
+F 3 "~" H 3750 2550 50  0001 C CNN
+	1    3750 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 1050 4300 1050
+Wire Wire Line
+	4300 1050 4300 1350
+$Comp
+L power:GND #PWR01
+U 1 1 60185786
+P 4300 3350
+F 0 "#PWR01" H 4300 3100 50  0001 C CNN
+F 1 "GND" H 4305 3177 50  0000 C CNN
+F 2 "" H 4300 3350 50  0001 C CNN
+F 3 "" H 4300 3350 50  0001 C CNN
+	1    4300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1350 4300 1350
+Connection ~ 4300 1350
+Wire Wire Line
+	4300 1350 4300 1750
+Wire Wire Line
+	3900 1750 4300 1750
+Connection ~ 4300 1750
+Wire Wire Line
+	4300 1750 4300 1950
+Wire Wire Line
+	3900 1950 4300 1950
+Connection ~ 4300 1950
+Wire Wire Line
+	4300 1950 4300 2250
+Wire Wire Line
+	3900 2250 4300 2250
+Connection ~ 4300 2250
+Wire Wire Line
+	4300 2250 4300 2550
+Wire Wire Line
+	3900 2550 4300 2550
+Wire Wire Line
+	4300 3150 4300 3350
+$Comp
+L Device:R_Small R1
+U 1 1 60186A64
+P 3050 1050
+F 0 "R1" V 2854 1050 50  0000 C CNN
+F 1 "R_Small" V 2945 1050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3050 1050 50  0001 C CNN
+F 3 "~" H 3050 1050 50  0001 C CNN
+	1    3050 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 1050 3600 1050
+$Comp
+L Device:R_Small R2
+U 1 1 6018842E
+P 3050 1350
+F 0 "R2" V 2854 1350 50  0000 C CNN
+F 1 "R_Small" V 2945 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3050 1350 50  0001 C CNN
+F 3 "~" H 3050 1350 50  0001 C CNN
+	1    3050 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 1350 3600 1350
+$Comp
+L Device:R_Small R3
+U 1 1 60188B22
+P 3050 1750
+F 0 "R3" V 2854 1750 50  0000 C CNN
+F 1 "R_Small" V 2945 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3050 1750 50  0001 C CNN
+F 3 "~" H 3050 1750 50  0001 C CNN
+	1    3050 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 1750 3600 1750
+$Comp
+L Device:R_Small R4
+U 1 1 60188F98
+P 3050 1950
+F 0 "R4" V 2854 1950 50  0000 C CNN
+F 1 "R_Small" V 2945 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3050 1950 50  0001 C CNN
+F 3 "~" H 3050 1950 50  0001 C CNN
+	1    3050 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 1950 3600 1950
+$Comp
+L Device:R_Small R5
+U 1 1 601894BD
+P 3050 2250
+F 0 "R5" V 2854 2250 50  0000 C CNN
+F 1 "R_Small" V 2945 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3050 2250 50  0001 C CNN
+F 3 "~" H 3050 2250 50  0001 C CNN
+	1    3050 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 2250 3600 2250
+$Comp
+L Device:R_Small R6
+U 1 1 60189D24
+P 3050 2550
+F 0 "R6" V 2854 2550 50  0000 C CNN
+F 1 "R_Small" V 2945 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3050 2550 50  0001 C CNN
+F 3 "~" H 3050 2550 50  0001 C CNN
+	1    3050 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 2550 3600 2550
+Wire Wire Line
+	2950 2550 2600 2550
+Wire Wire Line
+	2600 2550 2600 2250
+Wire Wire Line
+	2600 750  2250 750 
+Wire Wire Line
+	2600 1050 2950 1050
+Connection ~ 2600 1050
+Wire Wire Line
+	2600 1050 2600 750 
+Wire Wire Line
+	2950 1350 2600 1350
+Connection ~ 2600 1350
+Wire Wire Line
+	2600 1350 2600 1050
+Wire Wire Line
+	2950 1750 2600 1750
+Connection ~ 2600 1750
+Wire Wire Line
+	2600 1750 2600 1350
+Wire Wire Line
+	2950 1950 2600 1950
+Connection ~ 2600 1950
+Wire Wire Line
+	2600 1950 2600 1750
+Wire Wire Line
+	2950 2250 2600 2250
+Connection ~ 2600 2250
+Wire Wire Line
+	2600 2250 2600 1950
+$Comp
+L Image_Sensors:CMT168-1122F U1
+U 1 1 6018E2B4
+P 3600 4200
+F 0 "U1" H 3928 4246 50  0000 L CNN
+F 1 "CMT168-1122F" H 3928 4155 50  0000 L CNN
+F 2 "Image_Sensors:CMT168-1122F" H 3650 3750 50  0001 C CNN
+F 3 "http://www.optics-online.com/Detail.asp?PN=CMT168-1122F" H 3600 3950 50  0001 C CNN
+	1    3600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6018EB6F
+P 1500 3450
+F 0 "H1" H 1600 3496 50  0000 L CNN
+F 1 "MountingHole" H 1600 3405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 1500 3450 50  0001 C CNN
+F 3 "~" H 1500 3450 50  0001 C CNN
+	1    1500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6018FF29
+P 1500 3800
+F 0 "H2" H 1600 3846 50  0000 L CNN
+F 1 "MountingHole" H 1600 3755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 1500 3800 50  0001 C CNN
+F 3 "~" H 1500 3800 50  0001 C CNN
+	1    1500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 6019054F
+P 1500 4100
+F 0 "H3" H 1600 4146 50  0000 L CNN
+F 1 "MountingHole" H 1600 4055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 1500 4100 50  0001 C CNN
+F 3 "~" H 1500 4100 50  0001 C CNN
+	1    1500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 60190A3A
+P 1550 4450
+F 0 "H4" H 1650 4496 50  0000 L CNN
+F 1 "MountingHole" H 1650 4405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 1550 4450 50  0001 C CNN
+F 3 "~" H 1550 4450 50  0001 C CNN
+	1    1550 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 6019E47E
+P 3750 2900
+F 0 "D7" H 3743 2645 50  0000 C CNN
+F 1 "LED" H 3743 2736 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3750 2900 50  0001 C CNN
+F 3 "~" H 3750 2900 50  0001 C CNN
+	1    3750 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 2900 4300 2900
+$Comp
+L Device:R_Small R7
+U 1 1 6019E485
+P 3050 2900
+F 0 "R7" V 2854 2900 50  0000 C CNN
+F 1 "R_Small" V 2945 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3050 2900 50  0001 C CNN
+F 3 "~" H 3050 2900 50  0001 C CNN
+	1    3050 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 2900 3600 2900
+Wire Wire Line
+	2950 2900 2600 2900
+$Comp
+L Device:LED D8
+U 1 1 6019F1EE
+P 3750 3150
+F 0 "D8" H 3743 2895 50  0000 C CNN
+F 1 "LED" H 3743 2986 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3750 3150 50  0001 C CNN
+F 3 "~" H 3750 3150 50  0001 C CNN
+	1    3750 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 3150 4300 3150
+$Comp
+L Device:R_Small R8
+U 1 1 6019F1F5
+P 3050 3150
+F 0 "R8" V 2854 3150 50  0000 C CNN
+F 1 "R_Small" V 2945 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3050 3150 50  0001 C CNN
+F 3 "~" H 3050 3150 50  0001 C CNN
+	1    3050 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 3150 3600 3150
+Wire Wire Line
+	2950 3150 2600 3150
+Wire Wire Line
+	4300 3150 4300 2900
+Connection ~ 4300 3150
+Connection ~ 4300 2550
+Connection ~ 4300 2900
+Wire Wire Line
+	4300 2900 4300 2550
+Wire Wire Line
+	2600 3150 2600 2900
+Connection ~ 2600 2550
+Connection ~ 2600 2900
+Wire Wire Line
+	2600 2900 2600 2550
+Wire Notes Line
+	750  5250 5300 5250
+Wire Notes Line
+	5300 5250 5300 650 
+Wire Notes Line
+	5300 650  750  650 
+Wire Notes Line
+	750  650  750  5250
+$Comp
+L Connector:TestPoint TP1
+U 1 1 601B8A91
+P 9200 2150
+F 0 "TP1" H 9258 2268 50  0000 L CNN
+F 1 "TestPoint" H 9258 2177 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 9400 2150 50  0001 C CNN
+F 3 "~" H 9400 2150 50  0001 C CNN
+	1    9200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 601BA3C3
+P 8700 2250
+F 0 "TP2" H 8758 2368 50  0000 L CNN
+F 1 "TestPoint" H 8758 2277 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 8900 2250 50  0001 C CNN
+F 3 "~" H 8900 2250 50  0001 C CNN
+	1    8700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 601BAE5A
+P 8200 2350
+F 0 "TP3" H 8258 2468 50  0000 L CNN
+F 1 "TestPoint" H 8258 2377 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 8400 2350 50  0001 C CNN
+F 3 "~" H 8400 2350 50  0001 C CNN
+	1    8200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 601BB8F0
+P 7700 2550
+F 0 "TP4" H 7758 2668 50  0000 L CNN
+F 1 "TestPoint" H 7758 2577 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 7900 2550 50  0001 C CNN
+F 3 "~" H 7900 2550 50  0001 C CNN
+	1    7700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 601BC2CD
+P 7200 2650
+F 0 "TP5" H 7258 2768 50  0000 L CNN
+F 1 "TestPoint" H 7258 2677 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 7400 2650 50  0001 C CNN
+F 3 "~" H 7400 2650 50  0001 C CNN
+	1    7200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Female J2
+U 1 1 601BEB37
+P 9900 2400
+F 0 "J2" H 9928 2376 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 9928 2285 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 9900 2400 50  0001 C CNN
+F 3 "~" H 9900 2400 50  0001 C CNN
+	1    9900 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 2200 9200 2200
+Wire Wire Line
+	9200 2200 9200 2150
+Wire Wire Line
+	9700 2300 8700 2300
+Wire Wire Line
+	8700 2300 8700 2250
+Wire Wire Line
+	8200 2350 8200 2400
+Wire Wire Line
+	8200 2400 9700 2400
+Wire Wire Line
+	9700 2600 7700 2600
+Wire Wire Line
+	7700 2600 7700 2550
+Wire Wire Line
+	7200 2650 7200 2700
+Wire Wire Line
+	7200 2700 9700 2700
+Wire Notes Line
+	6700 1350 6700 3100
+Wire Notes Line
+	6700 3100 11050 3100
+Wire Notes Line
+	11050 3100 11050 1350
+Text Notes 8650 1600 0    50   ~ 0
+ICSP Board
+Wire Notes Line
+	6700 1350 11050 1350
+Text Label 9200 2150 2    50   ~ 0
+MISO
+Text Label 8200 2350 2    50   ~ 0
+SCLK
+Text Label 7700 2550 2    50   ~ 0
+RST
+Text Label 7200 2650 2    50   ~ 0
+VCC
+Text Label 8700 2250 2    50   ~ 0
+GND
+$Comp
+L power:GND #PWR?
+U 1 1 601E947C
+P 1800 2600
+F 0 "#PWR?" H 1800 2350 50  0001 C CNN
+F 1 "GND" H 1805 2427 50  0000 C CNN
+F 2 "" H 1800 2600 50  0001 C CNN
+F 3 "" H 1800 2600 50  0001 C CNN
+	1    1800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2600 1400 2600
+Text Label 1500 2700 0    50   ~ 0
+V_In
+Wire Wire Line
+	1500 2700 1400 2700
+Text Label 2250 750  2    50   ~ 0
+V_In
+$EndSCHEMATC
