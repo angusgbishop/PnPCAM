@@ -275,20 +275,12 @@ Wire Wire Line
 	3250 4900 3700 4900
 Wire Wire Line
 	3700 4300 3350 4300
-Text Label 3350 4300 2    50   ~ 0
-SCL
 Wire Wire Line
 	3700 4400 3350 4400
-Text Label 3350 4400 2    50   ~ 0
-SDA
 Wire Wire Line
 	7900 4600 7550 4600
-Text Label 7550 4600 2    50   ~ 0
-SCL
 Wire Wire Line
 	7900 4700 7550 4700
-Text Label 7550 4700 2    50   ~ 0
-SDA
 $Comp
 L Device:R_Small R10
 U 1 1 5FEA8822
@@ -713,8 +705,6 @@ Wire Wire Line
 	1750 2250 1900 2250
 Wire Wire Line
 	1900 2050 1750 2050
-Text Label 1300 2450 2    50   ~ 0
-VCC
 $Comp
 L 74xGxx:74LVC2G74 U8
 U 1 1 5FC811AD
@@ -1474,6 +1464,16 @@ F 4 "CL21A106KOQNNNE" H 3550 5800 50  0001 C CNN "MPN"
 	1    3550 5800
 	1    0    0    -1  
 $EndComp
+Text GLabel 7550 4700 0    50   Input ~ 0
+SDA
+Text GLabel 7550 4600 0    50   Input ~ 0
+SCL
+Text GLabel 3350 4300 0    50   Input ~ 0
+SCL
+Text GLabel 3350 4400 0    50   Input ~ 0
+SDA
+Text GLabel 1300 2450 0    50   Input ~ 0
+CLK_EN
 Wire Bus Line
 	6950 2900 6950 3700
 Wire Bus Line
