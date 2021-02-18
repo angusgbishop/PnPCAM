@@ -1,6 +1,6 @@
-# OpenPnPVis
+# PnPCAM
  
-OpenPnPVis is an [Open Hardware](https://www.oshwa.org/definition/) project dedicated to bringing high-quality machine vision to the various open source pick-and-place projects.
+PnPCAM is an [Open Hardware](https://www.oshwa.org/definition/) project dedicated to bringing high-quality machine vision to the various open source pick-and-place projects.
 
 This project is very much **in development**, clone at your own risk!
 
