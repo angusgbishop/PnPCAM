@@ -16,4 +16,5 @@ The current versions of the board are based off the OnSemi AR0144 image sensor, 
 
 # Interested?
 [View the Wiki here](https://github.com/angusgbishop/PnPCAM/wiki)
+
 Find me on the [OpenPnP Discord](https://discord.gg/EmsrFVx) 
