@@ -14,4 +14,6 @@ The current versions of the board are based off the OnSemi AR0144 image sensor, 
 * Triggered shutter mode.
 * Onboard lens distortion correction.
 
-
+# Interested?
+[View the Wiki here](https://github.com/angusgbishop/PnPCAM/wiki)
+Find me on the [OpenPnP Discord](https://discord.gg/EmsrFVx) 
